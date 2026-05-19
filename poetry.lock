@@ -1449,14 +1449,14 @@ test = ["pep440", "pre-commit", "pytest", "testpath"]
 
 [[package]]
 name = "nbsphinx"
-version = "0.9.4"
+version = "0.9.8"
 description = "Jupyter Notebook Tools for Sphinx"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.8"
 groups = ["dev"]
 files = [
-    {file = "nbsphinx-0.9.4-py3-none-any.whl", hash = "sha256:22cb1d974a8300e8118ca71aea1f649553743c0c5830a54129dcd446e6a8ba17"},
-    {file = "nbsphinx-0.9.4.tar.gz", hash = "sha256:042a60806fc23d519bc5bef59d95570713913fe442fda759d53e3aaf62104794"},
+    {file = "nbsphinx-0.9.8-py3-none-any.whl", hash = "sha256:92d95ee91784e56bc633b60b767a6b6f23a0445f891e24641ce3c3f004759ccf"},
+    {file = "nbsphinx-0.9.8.tar.gz", hash = "sha256:d0765908399a8ee2b57be7ae881cf2ea58d66db3af7bbf33e6eb48f83bea5495"},
 ]
 
 [package.dependencies]
@@ -1464,7 +1464,7 @@ docutils = ">=0.18.1"
 jinja2 = "*"
 nbconvert = ">=5.3,<5.4 || >5.4"
 nbformat = "*"
-sphinx = ">=1.8"
+sphinx = ">=1.8,<8.2.0 || >8.2.0,<8.2.1 || >8.2.1"
 traitlets = ">=5"
 
 [[package]]
