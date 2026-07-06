@@ -10,7 +10,7 @@ Returns:
 import os
 import pytest
 import pandas as pd
-from src.generators.report_generator import ReportGenerator
+from dataanalysistoolkit.generators.report_generator import ReportGenerator
 
 @pytest.fixture
 def sample_data():

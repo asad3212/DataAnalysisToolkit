@@ -7,7 +7,7 @@ _extended_summary_
 import pandas as pd
 import numpy as np
 import pytest
-from src.generators.generate_data import df  # Assuming the DataFrame is named 'df' in generate_data.py
+from dataanalysistoolkit.generators.generate_data import df  # Assuming the DataFrame is named 'df' in generate_data.py
 
 def test_column_types():
     assert df['A'].dtype == np.int64

@@ -10,7 +10,7 @@ Returns:
 import pytest
 import pandas as pd
 import matplotlib.pyplot as plt
-from src.visualizer.data_visualizer import DataVisualizer
+from dataanalysistoolkit.visualizer.data_visualizer import DataVisualizer
 
 @pytest.fixture
 def sample_data():

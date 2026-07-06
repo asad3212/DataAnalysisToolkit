@@ -12,17 +12,20 @@ Random choice of 'x', 'y', 'z' in column 'H'
 Some missing values have been introduced in columns 'C' and 'G'.
 """
 
+import os
 import numpy as np
 import pandas as pd
 
 def gen_data(n=100):
     """
-    gen_data _summary_
-
-    _extended_summary_
+    Generates a synthetic DataFrame with a mix of numeric, categorical, and
+    missing data, useful for testing and demoing the toolkit.
 
     Args:
         n (int, optional): Number of data points to be created. Defaults to 100.
+
+    Returns:
+        pandas.DataFrame: The generated synthetic dataset.
     """
     # Generating random data
     data = {
@@ -45,5 +48,29 @@ def gen_data(n=100):
     df.loc[np.random.choice(df.index, size=int(0.1 * n)), "C"] = np.nan
     df.loc[np.random.choice(df.index, size=int(0.1 * n)), "G"] = np.nan
 
-    # Saving the DataFrame to a CSV file
-    df.to_csv("data/test_random.csv", index=False)
+    return df
+
+
+def save_data(df, path="data/test_random.csv"):
+    """
+    Saves a generated DataFrame to a CSV file, creating the parent directory
+    if it doesn't already exist.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame to save.
+        path (str, optional): Destination CSV path. Defaults to
+        "data/test_random.csv".
+    """
+    parent_dir = os.path.dirname(path)
+    if parent_dir:
+        os.makedirs(parent_dir, exist_ok=True)
+    df.to_csv(path, index=False)
+
+
+# Module-level DataFrame available for import (e.g. `from generate_data import df`),
+# generated once when this module is first imported.
+df = gen_data()
+
+
+if __name__ == "__main__":
+    save_data(df)

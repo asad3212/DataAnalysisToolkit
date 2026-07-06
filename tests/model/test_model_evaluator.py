@@ -11,7 +11,7 @@ import pytest
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
-from src.model.model_evaluator import ModelEvaluator
+from dataanalysistoolkit.model.model_evaluator import ModelEvaluator
 from sklearn.metrics import confusion_matrix, precision_score, recall_score
 
 @pytest.fixture

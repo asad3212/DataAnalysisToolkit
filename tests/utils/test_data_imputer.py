@@ -10,7 +10,7 @@ Returns:
 import pytest
 import pandas as pd
 import numpy as np
-from src.utils.data_imputer import DataImputer
+from dataanalysistoolkit.preprocessor.data_imputer import DataImputer
 
 @pytest.fixture
 def sample_data():

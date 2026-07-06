@@ -11,7 +11,7 @@ import os
 import csv
 import datetime
 import pytest
-from src.generators.csv_data_generator import CSVDataGenerator
+from dataanalysistoolkit.generators.csv_data_generator import CSVDataGenerator
 
 def test_csv_file_creation(tmp_path):
     # Create a temporary file path

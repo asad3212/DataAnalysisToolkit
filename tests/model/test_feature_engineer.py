@@ -9,7 +9,7 @@ Returns:
 
 import pytest
 import pandas as pd
-from src.model.feature_engineer import FeatureEngineer
+from dataanalysistoolkit.model.feature_engineer import FeatureEngineer
 
 @pytest.fixture
 def sample_data():

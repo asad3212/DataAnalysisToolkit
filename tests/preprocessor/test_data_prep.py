@@ -10,7 +10,7 @@ Returns:
 import pytest
 import numpy as np
 import pandas as pd
-from src.preprocessor.data_prep import DataPreprocessor
+from dataanalysistoolkit.preprocessor.data_prep import DataPreprocessor
 
 @pytest.fixture
 def sample_data():

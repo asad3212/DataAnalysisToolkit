@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from src.integrators.data_integrator import DataIntegrator
+from dataanalysistoolkit.integrators.data_integrator import DataIntegrator
 
 @pytest.fixture
 def sample_dataframes():
